@@ -1,6 +1,6 @@
 """Tests for the Streamlit-based analysis wrapper."""
 
-from streamlit_app import analyze_code
+from app import analyze_code
 
 
 def test_analyze_code_returns_findings() -> None:
