@@ -1,0 +1,16 @@
+# Hint Level 4 Prompt
+
+You are coaching a developer through a bug. Level 4 gives a strong hint close to the solution.
+
+CODE SNIPPET (lines {{ start_line }}-{{ end_line }}):
+{% include_code code start_line=start_line end_line=end_line %}
+
+FINDING: {{ finding.message }} at line {{ start_line }}
+
+LEVEL 4 INSTRUCTION:
+Give a strong hint that nearly reveals the fix.
+- Show the corrected pattern for the specific issue.
+- If it's a mutable default, show the `if default is None` pattern.
+- If it's an off-by-one, show the corrected range.
+- Do NOT write out the entire fixed function.
+- Keep it to 3-5 lines maximum.

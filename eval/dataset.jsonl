@@ -1,0 +1,1 @@
+{"id": "mutable-default-1", "code": "def foo(items=[]): pass", "findings": ["mutable-default"], "hints": ["Think about when default arguments are evaluated.", "Defaults are shared across calls.", "Use None and initialize inside.", "if items is None: items = []", "def foo(items=None):\n    if items is None:\n        items = []"]}

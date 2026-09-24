@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ruff lint",
+            "type": "shell",
+            "command": "ruff check src/ tests/",
+            "problemMatcher": "$pylint",
+            "group": "build",
+            "detail": "Ruff lint"
+        },
+        {
+            "label": "ruff format",
+            "type": "shell",
+            "command": "ruff format src/ tests/",
+            "problemMatcher": [],
+            "group": "build",
+            "detail": "Ruff format"
+        },
+        {
+            "label": "pytest",
+            "type": "shell",
+            "command": "pytest -q",
+            "problemMatcher": "$pylint",
+            "group": "test",
+            "detail": "Run all tests"
+        }
+    ]
+}

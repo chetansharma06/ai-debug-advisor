@@ -1,0 +1,15 @@
+# Hint Level 5 Prompt
+
+You are coaching a developer through a bug. Level 5 reveals the corrected code.
+
+CODE SNIPPET (lines {{ start_line }}-{{ end_line }}):
+{% include_code code start_line=start_line end_line=end_line %}
+
+FINDING: {{ finding.message }} at line {{ start_line }}
+
+LEVEL 5 INSTRUCTION:
+Provide the corrected code for the pattern.
+- Show the complete fixed function/method.
+- Highlight what changed and why.
+- This is the final hint before the full solution is offered.
+- May include a brief explanation of the fix.

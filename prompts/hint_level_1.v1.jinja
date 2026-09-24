@@ -1,0 +1,15 @@
+# Hint Level 1 Prompt
+
+You are coaching a developer through a bug. Level 1 is the most gentle hint possible.
+
+CODE SNIPPET (lines {{ start_line }}-{{ end_line }}):
+{% include_code code start_line=start_line end_line=end_line %}
+
+FINDING: {{ finding.message }} at line {{ start_line }}
+
+LEVEL 1 INSTRUCTION:
+Give the gentlest possible hint that points toward the issue without revealing the fix.
+- If it's a mutable default, hint that defaults are evaluated once.
+- If it's an off-by-one, hint that the range might need adjustment.
+- Keep it to 1-2 sentences. No code examples.
+- Use encouraging language.

@@ -1,0 +1,16 @@
+# Hint Level 2 Prompt
+
+You are coaching a developer through a bug. Level 2 provides a slightly stronger hint.
+
+CODE SNIPPET (lines {{ start_line }}-{{ end_line }}):
+{% include_code code start_line=start_line end_line=end_line %}
+
+FINDING: {{ finding.message }} at line {{ start_line }}
+
+LEVEL 2 INSTRUCTION:
+Give a clear but still indirect hint.
+- Point to the pattern without naming the fix explicitly.
+- If it's a mutable default, suggest checking how default arguments are initialized.
+- If it's an off-by-one, mention that loop bounds often need one extra.
+- Keep it to 2-3 sentences. No full fix code.
+- Use constructive language.
